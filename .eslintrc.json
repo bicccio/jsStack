@@ -5,15 +5,21 @@
   },
   "extends": [
     "airbnb",
-    "plugin:flowtype/recommended"
+    "plugin:flowtype/recommended",
+    "prettier",
+    "prettier/flowtype",
+    "prettier/react"
   ],
   "plugins": [
     "flowtype",
-    "compat"
+    "compat",
+    "prettier"
   ],
   "rules": {
-    "semi": [2, "never"],
     "no-unexpected-multiline": 2,
     "compat/compat": 2
+  },
+  "settings": {
+    "polyfills": ["fetch"]
   }
 }
